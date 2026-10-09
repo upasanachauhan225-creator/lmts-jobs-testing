@@ -1,0 +1,78 @@
+<svg width="1440" height="700" viewBox="0 0 1440 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1440" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.06"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.07"/>
+    </linearGradient>
+
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180, 260) rotate(90) scale(260)">
+      <stop stop-color="#2563eb" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260, 240) rotate(90) scale(280)">
+      <stop stop-color="#06b6d4" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#3b82f6" fill-opacity="0.18"/>
+    </pattern>
+
+    <linearGradient id="lineGradLeft" x1="0" y1="0" x2="350" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <linearGradient id="lineGradRight" x1="1440" y1="0" x2="1090" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glows -->
+  <rect width="1440" height="700" fill="url(#bgGrad)"/>
+  <circle cx="180" cy="260" r="260" fill="url(#glowLeft)"/>
+  <circle cx="1260" cy="240" r="280" fill="url(#glowRight)"/>
+
+  <!-- Left Side Geometric Vectors -->
+  <g opacity="0.85">
+    <!-- Dot Matrix -->
+    <rect x="40" y="80" width="220" height="380" fill="url(#dotGrid)"/>
+    
+    <!-- Curved Circuit Curves -->
+    <path d="M-20 180 C 120 180, 160 300, 320 280" stroke="url(#lineGradLeft)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-40 240 C 100 240, 140 380, 280 360" stroke="url(#lineGradLeft)" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <path d="M40 380 C 140 360, 200 480, 360 450" stroke="url(#lineGradLeft)" stroke-width="2"/>
+
+    <!-- Decorative Nodes -->
+    <circle cx="320" cy="280" r="5" fill="#2563eb" fill-opacity="0.6"/>
+    <circle cx="280" cy="360" r="4" fill="#3b82f6" fill-opacity="0.4"/>
+    <circle cx="360" cy="450" r="6" fill="#2563eb" fill-opacity="0.7"/>
+
+    <!-- Left Geometric Polygon -->
+    <polygon points="120,440 180,410 240,460 180,510" fill="#2563eb" fill-opacity="0.03" stroke="#2563eb" stroke-opacity="0.15" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right Side Geometric Vectors -->
+  <g opacity="0.85">
+    <!-- Dot Matrix -->
+    <rect x="1180" y="60" width="220" height="400" fill="url(#dotGrid)"/>
+
+    <!-- Curved Circuit Curves -->
+    <path d="M1460 160 C 1320 160, 1280 290, 1120 270" stroke="url(#lineGradRight)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1480 220 C 1340 220, 1300 370, 1160 350" stroke="url(#lineGradRight)" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <path d="M1400 360 C 1300 340, 1240 470, 1080 440" stroke="url(#lineGradRight)" stroke-width="2"/>
+
+    <!-- Decorative Nodes -->
+    <circle cx="1120" cy="270" r="5" fill="#06b6d4" fill-opacity="0.6"/>
+    <circle cx="1160" cy="350" r="4" fill="#06b6d4" fill-opacity="0.4"/>
+    <circle cx="1080" cy="440" r="6" fill="#0891b2" fill-opacity="0.7"/>
+
+    <!-- Right Geometric Polygon -->
+    <polygon points="1320,420 1380,390 1440,440 1380,490" fill="#06b6d4" fill-opacity="0.03" stroke="#06b6d4" stroke-opacity="0.15" stroke-width="1.5"/>
+  </g>
+</svg>
